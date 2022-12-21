@@ -63,3 +63,207 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # codingtask
+#Api Documentation
+{
+	"info": {
+		"_postman_id": "f67c251d-7bca-4de7-86af-31ef251b17a3",
+		"name": "codingtask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/post?role=editor&email=y@123",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login?email=y@123&password=111111",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "y@123"
+						},
+						{
+							"key": "password",
+							"value": "111111"
+						},
+						{
+							"key": "post",
+							"value": "new post",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login?email=y@123&password=111111",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register?email=san@12&password=111111&phone=9131323213&password=123123&confirm_password=123123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "san@12"
+						},
+						{
+							"key": "password",
+							"value": "111111"
+						},
+						{
+							"key": "phone",
+							"value": "9131323213"
+						},
+						{
+							"key": "password",
+							"value": "123123"
+						},
+						{
+							"key": "confirm_password",
+							"value": "123123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/register?email=san@12&password=111111&phone=9131323213&password=123123&confirm_password=123123",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register?email=san@12&password=111111&phone=9131323213&password=123123&confirm_password=123123",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "san@12"
+						},
+						{
+							"key": "password",
+							"value": "111111"
+						},
+						{
+							"key": "phone",
+							"value": "9131323213"
+						},
+						{
+							"key": "password",
+							"value": "123123"
+						},
+						{
+							"key": "confirm_password",
+							"value": "123123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/delete?id=5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/delete?id=4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/updatepost?id=3&title=new&post=new post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/updatepost?id=3&title=new&post=new post",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updatepost"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						},
+						{
+							"key": "title",
+							"value": "new"
+						},
+						{
+							"key": "post",
+							"value": "new post"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
